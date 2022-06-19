@@ -5,18 +5,26 @@
       Add Flight:
     </div>
     <div class="hero-form">
-      <form>
+      <form action="/flights" method="POST">
         <label for="arline-input">Airline:</label>
-        <input type="text" name="airline">
-
+        <select name="airline">
+          <option value="American">American</option>
+          <option value="Southwest">Southwest</option>
+          <option value="United">United</option>
+        </select>
         <label for="airport-input">Airport:</label>
-        <input type="text" name="airport">
-        
+        <select name="airport">
+          <option value="AUS">AUS</option>
+          <option value="DFW">DFW</option>
+          <option value="DEN">DEN</option>
+          <option value="LAX">LAX</option>
+          <option value="SAN">SAN</option>
+        </select>
         <label for="flightNo-input">Flight Number:</label>
-        <input type="text" name="flightNo">
-        
+        <input type="text" name="flightNo" placeholder="0000">
         <label for="depart-input">Departure Date:</label>
-        <input type="text" name="depart">
+        <input type="datetime-local" name="departs">
+        <button type="submit">Add Flight</button>
       </form>
     </div>
   </main>

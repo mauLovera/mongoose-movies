@@ -28,7 +28,21 @@ function newFlight(req, res) {
   })
 }
 
+function create(req, res) {
+  console.log(req.body)
+  Flight.create(req.body)
+  .then(flight => {
+    console.log('Created Flight: ', flight)
+    res.redirect('/flights')
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/')
+  })
+}
+
 export {
   index,
-  newFlight as new
+  newFlight as new,
+  create
 }

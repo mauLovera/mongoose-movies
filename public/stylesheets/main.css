@@ -15,3 +15,62 @@ body {
   background: url('../assets/bg-img.jpg');
   background-size: cover;
 }
+
+.bg-wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.11);
+  z-index: 1;
+}
+
+/* Nav */
+nav {
+  height: 10%;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  padding-inline: .5em;
+  z-index: 2;
+}
+
+nav > .nav-logo {
+  font-size: 1.9em;
+  color: white;
+  text-decoration: none;
+}
+
+nav > .nav-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+nav > .nav-right > .nav-links {
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+}
+
+/* Main */
+main {
+  height: 80%;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid white;
+  padding-inline: .5em;
+  color: white;
+}
+
+main > .hero-text {
+  font-size: 3em;
+}

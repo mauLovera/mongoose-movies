@@ -1,16 +1,28 @@
 </head>
 <body>
-  <nav>
-    <a 
-      href="/flights" 
-      <%- title === 'All Flights' ? 'class="acitve"' : '' %> 
-    >
-      All Flights
-    </a>
-    <a 
-      href="/flights/new" 
-      <%- title === 'Add Flights' ? 'class="acitve"' : '' %> 
-    >
-      Add Flights
-    </a>
-  </nav>
+  <div class="bg-wrapper">
+    <nav>
+      <a 
+        href="/" 
+        class="nav-logo" 
+      >
+        Mongoose Flights
+      </a>
+      <div class="nav-right">
+        <a 
+          href="/flights" 
+          class="nav-links"
+          <%- title === 'All Flights' ? 'id="active"' : '' %> 
+        >
+          All Flights
+        </a>
+        <a 
+          href="/flights/new" 
+          class="nav-links"
+          <%- title === 'Add Flights' ? 'id="active"' : '' %> 
+        >
+          Add Flights
+        </a>
+      </div>
+    </nav>
+

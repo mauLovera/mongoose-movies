@@ -12,6 +12,7 @@
             <th>Airport</th>
             <th>Flight Number</th>
             <th>Departure Date</th>
+            <th style="visibility: hidden;">View</th>
           </thead>
           <tbody>
             <% flights.forEach((flight) => { %>
@@ -20,7 +21,17 @@
                 <td><%= flight.airport %></td>
                 <td><%= flight.flightNo %></td>
                 <td><%= flight.departs %></td>
-              </tr>          
+                <td><a href="/flights/<%= flight._id %> ">View</a></td>
+                <td>
+                  <form 
+                    id="delete-btn" 
+                    action="/flights/<%= flight._id %>?_method=DELETE"
+                    method="POST"
+                  >
+                    <button type="submit">X</button>
+                  </form>
+                </td>          
+              </tr>
             <%  }) %> 
           </tbody>
         </table>

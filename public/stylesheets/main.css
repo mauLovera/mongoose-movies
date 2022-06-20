@@ -89,7 +89,7 @@ main > .hero-text {
   font-size: 1.3em;
 }
 
-form {
+.new-form {
   background: rgba(126, 124, 124, 0.548);
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 18px );
@@ -108,8 +108,12 @@ table {
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   padding: 2em;
-  width: 50vw;
+  width: 55vw;
   text-align: center;
+}
+
+td {
+  padding-inline: 10px;
 }
 
 input {
@@ -128,3 +132,10 @@ select {
 .hero-form > form > label {
   align-self: flex-start;
 }
+
+a {
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+}
+

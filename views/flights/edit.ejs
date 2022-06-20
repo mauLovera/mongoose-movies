@@ -2,10 +2,10 @@
 <%- include("../partials/nav") %>
   <main>
     <div class="hero-text">
-      Add Flight:
+      Edit Flight:
     </div>
     <div class="hero-form">
-      <form class="new-form" action="/flights" method="POST">
+      <form class="new-form" action="/flights/<%= flight._id %>?_method=PUT" method="POST">
         <label for="arline-input">Airline:</label>
         <select name="airline">
           <option value="American">American</option>
